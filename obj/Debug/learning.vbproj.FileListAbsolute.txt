@@ -1,0 +1,9 @@
+G:\js_learn\learning\learning\bin\learning.dll.config
+G:\js_learn\learning\learning\bin\learning.dll
+G:\js_learn\learning\learning\bin\learning.pdb
+G:\js_learn\learning\learning\bin\learning.xml
+G:\js_learn\learning\learning\obj\Debug\learning.Resources.resources
+G:\js_learn\learning\learning\obj\Debug\learning.vbproj.GenerateResource.Cache
+G:\js_learn\learning\learning\obj\Debug\learning.dll
+G:\js_learn\learning\learning\obj\Debug\learning.xml
+G:\js_learn\learning\learning\obj\Debug\learning.pdb

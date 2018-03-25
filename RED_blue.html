@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+<style>
+    .one{
+   display:inline-block;
+    width:100px;
+    height:100px;
+    position:relative;
+    background-color:red;
+-webkit-animation-name:sepehr;
+-webkit-animation-duration: 2s;
+-webkit-animation-delay: 0s;
+ -webkit-animation-timing-function: ease-in-out;
+           
+    }
+    .two{
+    display:inline-block;
+    width:100px;
+    height: 100px;
+    position: relative;
+    background-color: blue;
+    float: right;
+    top: 300px;
+    margin-left: -104px;
+   
+     -webkit-transition: transform 4s ease-in-out;
+
+    }
+    .two:hover{
+
+        
+
+
+        -webkit-transform:translateX(-700px)
+
+    }
+    @-webkit-keyframes sepehr {
+
+        from {
+          transform: translateX(-200px)
+           
+        }
+
+
+        to {
+             transform: translateX(900px)
+        
+        }
+    }
+
+</style>
+</head>
+<body>
+    <div class="one">1</div>
+    <div class="two">2</div>
+</body>
+</html>

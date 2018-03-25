@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="jquery-3.2.1 (1).js"></script>
+   
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        @font-face {
+            font-family: 'GOTHAM-BOLD';
+            src: url('NewFolder1/GOTHAM-BOLD.TTF') format('truetype');
+        }
+        @font-face {
+            font-family: 'OpenSans-Bold';
+            src: url('open-sans/OpenSans-Bold.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'OpenSans-Light';
+            src: url('open-sans/OpenSans-Light.ttf') format('truetype');
+        }
+
+        .head_first {
+    position: relative;
+    height: 800px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-image: url(coca-cola/coca-cola-siente-el-sabor-amigos-1800x700.jpg);
+    background-attachment: fixed;
+    background-size: 1300px 445px;
+    background-position: top center;
+        }
+        .head_two {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(coca-cola/coca-cola-logo-260x260.png);
+    background-attachment: fixed;
+    background-position: center center
+        }
+      .History{
+    position: relative;
+ background-color:#925a5a;
+ /*box-shadow:*/
+    height: 400px;
+   
+
+
+
+      }
+      h1{
+          font-family: 'OpenSans-Bold'
+
+      }
+      figure{
+  position: relative;
+  width: 800px;
+  height: 600px;
+  /*margin-bottom:-20px;*/
+  opacity:0;
+  -webkit-transform:translateX(20px);
+  -webkit-transition:all 0.3s ease-in-out;
+  -moz-transform:translateX(20px);
+  -moz-transition:all 0.3s ease-in-out;
+
+  
+      }
+      .scrolling{
+
+          opacity:1;
+           -webkit-transform:translateX(0);
+           -moz-transform:translateX(0);
+
+      }
+      figure img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin-left: 869px;
+    margin-top: -255px;
+
+      }
+      figcaption{
+         
+          display:block;
+          font-family: 'OpenSans-Light';
+          font-weight:bold;
+          color:#9a8484
+
+             
+      }
+      #first_d{
+
+          width:100%;
+          /*padding:5%;*/
+          margin:0 auto;
+      }
+      #second_d{
+
+         
+           position: relative;
+            width: 800px;
+            height: 600px;
+
+
+      }
+       #second_d input {
+                width: 600px;
+                height: 50px;
+    margin-top: 20px;
+    margin-left: 30%;
+
+
+
+            }
+               #second_d label{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                position:absolute;
+    margin-top: 30px;
+    margin-left: 30px;
+            }
+     
+         h4{
+       
+     text-align: center;
+    margin-left: 40%;
+    font-size: 2em;
+    font-weight: 100;
+    font-family: 'GOTHAM-BOLD',Arial, Helvetica, sans-serif;
+    color: rgba(244,0,9,1);
+       }
+        .inner_div_two{
+            /*display:inline-block;*/
+        }
+        select{
+
+            position: relative;
+    margin-left: 30%;
+    margin-top: 30px;
+    padding: 5px 5px;
+    display: inline-block;
+    float: left;
+
+        }
+    </style>
+    <script>
+
+        $(document).ready(function () {
+           
+$(window).scroll(function () {
+
+    var scr_top = $(this).scrollTop();
+    if (scr_top > $('.History').offset().top - ($(window).height() / 1.2)) {
+
+    setTimeout(function () {
+                        $('.History figure').addClass('scrolling')
+                    },300)
+                       
+
+
+                 
+
+                    
+                    }
+
+
+})
+
+
+
+
+
+
+
+            })
+
+
+        
+
+    </script>
+</head>
+<body>
+
+ <header class="head_first">
+     <div class="head_two"></div>
+</header>
+    <main>
+        <div class="History">
+            <figure>
+                <h1>History</h1>
+                <figcaption >Coca-Cola history began in 1886 when the curiosity of an Atlanta pharmacist, Dr. John S. Pemberton, led him to create a distinctive tasting soft drink that could be sold at soda fountains.<br> He created a flavored syrup, took it to his neighborhood pharmacy, where it was mixed with carbonated water and deemed “excellent” by those who sampled it.<br /> Dr. Pemberton’s partner and bookkeeper, Frank M. Robinson, is credited with naming the beverage “Coca‑Cola” as well as designing the trademarked, distinct script, still used today.</figcaption>
+                <img src="coca-cola/Coca-Cola.png"/>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <div id="first_d">
+            <div id="second_d">
+                <form>
+
+
+
+                    <h4>NEWSLETTER SIGNUP</h4>
+
+
+
+                    <div class="inner_div">
+                        <label>Name</label>
+                        <input type="text" />
+                    </div>
+
+                    <div class="inner_div">
+                        <label>Email</label>
+                        <input type="email" />
+                    </div>
+
+                    <div class="inner_div_two">
+                        <label>Date of Birth</label>
+                        <select>
+                            <option value="">Year</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+
+                        </select>
+                        <select></select>
+                        <select></select>
+                    </div>
+
+                </form>
+
+            </div>
+
+
+
+        </div>  
+        
+    </footer>
+</body>
+</html>
