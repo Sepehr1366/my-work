@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="jquery-3.2.1 (1).js"></script>
+    <style>
+
+        .Acoor_panel{
+
+
+            display:none;
+        }
+        .Tab_contorol{
+            display:none;
+        }
+        .Tab_contorol .active{
+            display:block;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //$('.Accordion button').on('click', function (e) {
+            //    e.preventDefalt;
+               
+            //    $(this).next('.Acoor_panel').slideToggle();
+            //   })
+
+
+
+            $('.Tab_panel').each(function () {
+                var $this=$(this)
+                var $Link= $this.find('li .active')
+                var $tab=$Link.find('a');
+                var $panel=$($tab.attr('href'));
+
+                $(this).on('click','.Ancor_link',function(){
+                    e.preventDefalt;
+
+                    var $panel_two=$(this);
+                    var id=this.hash
+                    if (id && !$tab.is('.active'))
+                        $panel.removeClass('active');
+                    $Link.removeClass('active');
+                })
+                $Link = $(id).addClass('active');
+                $tab = $tab.parent().addClass('active');
+            })
+
+
+        })
+
+
+
+
+    </script>
+</head>
+<body>
+    <ul class="Accordion">
+        <li>
+            <button class="Acoor_control">one</button>
+            <div class="Acoor_panel">
+                <p>She continued, “Administration always seems to err on the side of keeping the parent happy, which leaves me with no way to do the job I was hired to do ... teach kids.”</p>
+            </div>
+        </li>
+
+        <li>
+            <button class="Acoor_control">one</button>
+            <div class="Acoor_panel">
+                <p>She continued, “Administration always seems to err on the side of keeping the parent happy, which leaves me with no way to do the job I was hired to do ... teach kids.”</p>
+            </div>
+        </li>
+
+        <li>
+            <button class="Acoor_control">one</button>
+            <div class="Acoor_panel">
+                <p>She continued, “Administration always seems to err on the side of keeping the parent happy, which leaves me with no way to do the job I was hired to do ... teach kids.”</p>
+            </div>
+        </li>
+
+    </ul>
+
+    <ul class="Tab_panel">
+
+        <li class="active">
+            <a class="Ancor_link" href="tab1">Description</a>
+        </li>
+        <li>
+            <a class="Ancor_link" href="tab2">Ingredients</a>
+        </li>
+        <li>
+            <a class="Ancor_link" href="tab">Delivery<</a>
+        </li>
+    </ul>
+    <div class="Tab_contorol active" id="Tab_one">Contentl</div>
+    <div class="Tab_contorol" id="Tab_two">Content2</div>
+    <div class="Tab_contorol" id="Tab_there">Content3</div>
+</body>
+</html>

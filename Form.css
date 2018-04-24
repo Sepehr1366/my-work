@@ -1,0 +1,120 @@
+﻿body {
+}
+  #Sign_In label.error{
+
+        font-size:0.8em;
+        color:#F00;
+        font-weight:bold;
+        display:block;
+       margin-left: 530px;
+}
+
+
+    }
+    #Sign_Ininput.error, #Sign_In select.error {
+            border: 1px red solid ;
+            background:#ffa9bb;
+        }
+    #form_Page {
+            height: 800px;
+            background-image: url('NewFolder1/pattern.jpg');
+            position: relative;
+        }
+
+        #form_column {
+            position: relative;
+            width: 800px;
+            height: 600px;
+        }
+
+            #form_column input {
+                width: 600px;
+                height: 50px;
+                margin-top: 20px;
+                margin-left: 60px;
+            }
+               #form_column label{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                position:absolute;
+                margin-top: -5px;
+            }
+        #sub_form{
+            position:relative;
+        }
+          #sub_form label{
+
+          margin-top: 13px;
+            position:absolute;
+        }
+           #sub_form span{
+                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-top: 13px;
+          margin-left: 13px;
+            position:absolute;
+        }
+             #sub_form input{
+             width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 120px;
+          
+        }
+             #sepehr{
+                 position:relative;
+             }
+              #sepehr label{
+                    margin-top: 13px;
+            position:absolute;
+             }
+               #sepehr input{
+                  width:350px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 140px
+             }
+               #Birth{
+
+
+                     position:relative;
+               }
+                   #Birth label{
+
+                         margin-top: 13px;
+            position:absolute;
+
+               }
+                   #Birth select{
+
+
+                            width:350px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 140px;
+
+                   }
+                   #email{
+                       position:relative;
+                   }
+                      #email input{
+                       width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 120px;
+                   }
+                       #email label{
+                     
+          margin-top: 13px;
+            position:absolute;
+                   }
+                       #sub{
+
+                           position:relative;
+                       }
+                        #sub input{
+
+                           position:absolute;
+                             width: 300px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 50px;
+                       }

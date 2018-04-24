@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="jquery-3.2.1 (1).js"></script>
+   
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+       
+
+        @font-face {
+            font-family: 'Vhiena_Gradient';
+            src: url('NewFolder1/Vhiena_Gradient.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'Vhiena_Base';
+            src: url('NewFolder1/Vhiena_Base.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'Vhiena_Bevel';
+            src: url('NewFolder1/Vhiena_Bevel.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'Vhiena_Outline';
+            src: url('NewFolder1/Vhiena_Outline.otf') format('opentype');
+        }
+  #Main_photo {
+            position:relative;
+            height:65%;
+            /*display:grid;*/
+            padding: 27% 0;
+            background-image: url('Restrunant.jpg');
+            background-position:center center;
+            background-repeat:no-repeat;
+            background-size:cover;
+
+        }
+   #Main_photo h1 {
+    font-family: 'Vhiena_Base';
+    font-size: 800%;
+    text-shadow: 5px 5px 5px #171611;
+    right: 30%;
+    top: -128px;
+    position: absolute;
+    opacity: 1.5;
+    color: #7c795d;
+        }
+        .Btn_one{
+
+          -webkit-transition-duration: 2s;
+           right: -75px;
+           top: 0;
+           position: absolute;
+        }
+        #Menu_head{
+        
+            float:left;
+            width:500px;
+            height:100%;
+            position: absolute;
+            top: 0;
+            left: -100px;
+       
+
+
+        }
+         #Menu_head img{
+          background-color: #686868;
+           
+
+
+        }
+    .Menuitem {
+    position: fixed;
+    height: 100%;
+    width: 100px;
+    background: #535353;
+    display: block;
+    opacity: 0.5;
+           
+        }
+    .Menuitem ul {
+  padding:20px 0;
+           
+        }
+    .Menuitem ul li {
+  padding:20px 0;
+  list-style:none         
+        }
+  .Menuitem ul li a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Vhiena_Outline';
+    font-size: 200%;
+    font-weight: bold;
+    
+        }
+      article{
+
+            padding:10px;
+            -webkit-column-break-inside: avoid;
+            -webkit-break-inside: avoid-column;
+            margin-bottom: 1rem;
+
+        }
+        
+
+        .History {
+          position: relative;
+           background-color: #4b4747;
+          height: 400px;
+          top: -27px;
+        }
+       
+        h1 {
+            font-family: 'OpenSans-Bold';
+        }
+
+        figure {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            opacity:0;
+           -webkit-transform: translateX(20px);
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transform: translateX(20px);
+            -moz-transition: all 0.3s ease-in-out;
+        }
+         .scrolling {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+        }
+
+        figure img {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            margin-left: 869px;
+           margin-top: -184px;
+        }
+
+        figcaption {
+            display: block;
+            font-family: 'OpenSans-Light';
+            font-weight: bold;
+            color: #9a8484;
+        }
+
+     .animate{
+
+       left:0;
+       
+    }
+    </style>
+    <script>
+        $(document).ready(function () {
+
+            $('.Btn_one').on('click', function () {
+
+                $('.Menuitem').toggleClass('animate')
+               
+            })
+            $(window).scroll(function () {
+
+                var scr_top = $(this).scrollTop();
+                if (scr_top > $('.History').offset().top - ($(window).height() / 1.2)) {
+
+                    setTimeout(function () {
+                        $('.History figure').addClass('scrolling')
+                    }, 1500)
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="Main_photo">
+        <h1>Restaurant</h1>
+
+    </div>
+    <div id="Menu_head">
+       
+        <div class="Menuitem">
+            <ul>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">Conect</a>
+                </li>
+            </ul>
+            <a class="Btn_one"><img src="Menu.png" /></a>
+        </div>
+       
+    </div>
+   
+ <div class="History">
+        <figure>
+            <h1>History</h1>
+            <figcaption>A steak (from Old Norse steik, “roast”) is a cut of meat (usually beef). Most steaks are cut perpendicular to the muscle fibres, improving the perceived tenderness of the meat. In North America, steaks are typically served grilled, pan-fried, or broiled. The more tender cuts from the loin and rib are cooked quickly, using dry heat, and served whole. Less tender cuts from the chuck or round are cooked with moist heat or are mechanically tenderised.</figcaption>
+           
+            <img src="steak.jpeg" />
+        </figure>
+</div>
+
+</body>
+</html>

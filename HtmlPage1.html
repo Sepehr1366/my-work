@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="jquery-3.2.1 (1).js"></script>
+    <style>
+        body {
+            background-color: #252222;
+        }
+
+        #hero_one {
+            /*display: grid;*/
+            /*grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            align-items: center;
+            margin: 0 4rem;
+            position: relative;*/
+            /*margin-bottom:30px;*/
+        }
+            /*@media (min-width: 400px) {
+            #hero_one {
+                grid-template-columns: 1fr ;
+            }*/
+            #hero_one img {
+                width: 100%;
+                height: 100%;
+                /*grid-column:1/;*/
+                grid-column: 1/4;
+                grid-row: 1/2;
+            }
+
+        .photo_gallery {
+            height: 600px;
+            /*margin-top: -2100px;*/
+            position: relative;
+        }
+
+            .photo_gallery ul {
+                /*display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(300px,350px));
+        /*grid-auto-flow:dense;*/
+                /*grid-auto-rows:260px;
+          grid-gap:2em;
+          padding:0;*/
+                display: grid;
+                grid-template-columns: repeat(4,100px);
+                /*grid-auto-flow:dense;*/
+                /*grid-auto-rows:260px;*/
+                grid-gap: 4px;
+                width: calc(400px + 12px + 4.4rem);
+            }
+
+            .photo_gallery li {
+                position: relative;
+                list-style: none;
+            }
+
+            .photo_gallery img {
+                display: block;
+                object-fit: cover;
+                width: 50%;
+            }
+
+        .heigh_light {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .light_box {
+            position: fixed;
+            right: 0;
+            left: 100%;
+            top: 0;
+            bottom: 0;
+            background: rgba(81, 75, 75, 0.20);
+            opacity: 0;
+            transition: all 200ms ease-in-out;
+        }
+
+            .light_box[data-state= 'visible'] {
+                opacity: 1;
+                left: 0;
+            }
+
+        .Big_one {
+            position: relative;
+            height: 500px;
+        }
+
+        .cointaner {
+            position: absolute;
+            top: 15px;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+            background-color: #fff;
+            border-radius: 6px;
+            box-shadow: 1px 1px 4px #000;
+            padding: 1em;
+        }
+
+            .cointaner img {
+                display: block;
+                width: 100%;
+            }
+
+        .contain {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+        }
+
+        .left_button {
+            position: relative;
+        }
+
+        .Right_butt {
+            position: relative;
+        }
+    </style>
+    <script>
+    $(document).ready(function () {
+
+        var $thumb_one = $('.thumb');
+        var $thumb_two = $('.light_image')
+        var $light = $('.light_box');
+        var $butt = $('.btn_close');
+        var $Next = $('.Right_butt');
+        var $Prev = $('.left_button');
+        $thumb_one.on('click', 'a', function (e) {
+
+            e.preventDefault();
+            //var big_imge = $(this).attr('href');
+            //$thumb_two.attr('src', big_imge);
+            //$light.attr('data-state', 'visible');
+
+        })
+
+
+        $butt.on('click', function () {
+
+
+
+            $light.attr('data-state', 'hidden');
+
+        })
+
+        $Next.on('click', function () {
+
+            var Current = $('.active');
+            var Next_on = Current.next()
+            if (Next_on.length) {
+                Current.removeClass('active').css('z-index', -10)
+
+                Next_on.addClass('active').css('z-index', 10)
+            }
+
+
+
+        })
+
+        $Prev.on('click', function () {
+
+
+            var Current = $('.active');
+            var Prev_on = Current.next()
+            if (Prev_on.length) {
+                Current.removeClass('active').css('z-index', -10)
+
+                Prev_on.addClass('active').css('z-index', 10)
+
+
+
+
+            }
+
+
+        })
+    })
+
+
+
+
+
+    </script>
+
+</head>
+<body>
+    <ul class="thumb">
+
+        <li>
+            <a href="planets/uran.jpg">
+
+                <img src="planets/uran.jpg" class="heigh_light active" />
+            </a>
+        </li>
+        <li>
+            <a href="planets/mercury.jpg">
+
+                <img src="planets/mercury.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="planets/saturn.jpg">
+
+                <img src="planets/saturn.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="planets/neptun_pic1b.jpg">
+                <img src="planets/neptun_pic1b.jpg" />
+            </a>
+
+        </li>
+
+</ul>
+
+
+
+</body>
+</html>

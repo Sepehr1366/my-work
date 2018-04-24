@@ -2,204 +2,293 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <link href="Form.css" rel="stylesheet" />
+    <link href="jquery-ui.theme.css" rel="stylesheet" />
+    <link href="jquery-ui.structure.css" rel="stylesheet" />
     <script src="jquery-3.2.1 (1).js"></script>
-   
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery.validate.js"></script>
     <style>
-        body{
-            margin:0;
-            padding:0;
+        body {
+            margin: 0;
+            padding: 0;
         }
+
         @font-face {
             font-family: 'GOTHAM-BOLD';
             src: url('NewFolder1/GOTHAM-BOLD.TTF') format('truetype');
         }
+
         @font-face {
             font-family: 'OpenSans-Bold';
             src: url('open-sans/OpenSans-Bold.ttf') format('truetype');
         }
+
         @font-face {
             font-family: 'OpenSans-Light';
             src: url('open-sans/OpenSans-Light.ttf') format('truetype');
         }
 
         .head_first {
-    position: relative;
-    height: 800px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    background-image: url(coca-cola/coca-cola-siente-el-sabor-amigos-1800x700.jpg);
-    background-attachment: fixed;
-    background-size: 1300px 445px;
-    background-position: top center;
+            position: relative;
+            height: 800px;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-image: url(coca-cola/coca-cola-siente-el-sabor-amigos-1800x700.jpg);
+            background-attachment: fixed;
+            background-size: 1300px 445px;
+            background-position: top center;
         }
+
         .head_two {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-image: url(coca-cola/coca-cola-logo-260x260.png);
-    background-attachment: fixed;
-    background-position: center center
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-image: url(coca-cola/coca-cola-logo-260x260.png);
+            background-attachment: fixed;
+            background-position: center center;
         }
-      .History{
-    position: relative;
- background-color:#925a5a;
- /*box-shadow:*/
-    height: 400px;
-   
+         .Main_box{
+
+            -webkit-columns: 250px;
+            -webkit-columns: 250px;
+            -webkit-column-gap: 20px;
+            -webkit-column-gap: 20px; 
 
 
+        }
+        article{
 
-      }
-      h1{
-          font-family: 'OpenSans-Bold'
+            padding:10px;
+            -webkit-column-break-inside: avoid;
+            -webkit-break-inside: avoid-column;
+    margin-bottom: 1rem;
 
-      }
-      figure{
-  position: relative;
-  width: 800px;
-  height: 600px;
-  /*margin-bottom:-20px;*/
-  opacity:0;
-  -webkit-transform:translateX(20px);
-  -webkit-transition:all 0.3s ease-in-out;
-  -moz-transform:translateX(20px);
-  -moz-transition:all 0.3s ease-in-out;
+        }
+         article img{
 
-  
-      }
-      .scrolling{
+            /*width:100%;*/
 
-          opacity:1;
-           -webkit-transform:translateX(0);
-           -moz-transform:translateX(0);
+            width:300px;
+            height:500px;
+        }
 
-      }
-      figure img{
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    margin-left: 869px;
-    margin-top: -255px;
+        .History {
+            position: relative;
+            background-color: #925a5a;
+            /*box-shadow:*/
+            height: 400px;
+        }
+       
+        h1 {
+            font-family: 'OpenSans-Bold';
+        }
 
-      }
-      figcaption{
-         
-          display:block;
-          font-family: 'OpenSans-Light';
-          font-weight:bold;
-          color:#9a8484
-
-             
-      }
-      #first_d{
-
-          width:100%;
-          /*padding:5%;*/
-          margin:0 auto;
-      }
-      #second_d{
-
-         
-           position: relative;
+        figure {
+            position: relative;
             width: 800px;
             height: 600px;
-
-
-      }
-       #second_d input {
-                width: 600px;
-                height: 50px;
-    margin-top: 20px;
-    margin-left: 30%;
-
-
-
-            }
-               #second_d label{
-                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                position:absolute;
-    margin-top: 30px;
-    margin-left: 30px;
-            }
-     
-         h4{
-       
-     text-align: center;
-    margin-left: 40%;
-    font-size: 2em;
-    font-weight: 100;
-    font-family: 'GOTHAM-BOLD',Arial, Helvetica, sans-serif;
-    color: rgba(244,0,9,1);
-       }
-        .inner_div_two{
-            /*display:inline-block;*/
+            /*margin-bottom:-20px;*/
+            opacity: 0;
+            -webkit-transform: translateX(20px);
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transform: translateX(20px);
+            -moz-transition: all 0.3s ease-in-out;
         }
-        select{
 
+        .scrolling {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+        }
+
+        figure img {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            margin-left: 869px;
+            margin-top: -255px;
+        }
+
+        figcaption {
+            display: block;
+            font-family: 'OpenSans-Light';
+            font-weight: bold;
+            color: #9a8484;
+        }
+
+        #first_d {
+            width: 100%;
+            /*padding:5%;*/
+            margin: 0 auto;
+            position:relative;
+        }
+
+        #second_d {
+            /*position: relative;*/
+            width: 800px;
+            height: 600px;
+        }
+
+            #second_d input {
+                width: 300px;
+                height: 50px;
+                margin-top: 20px;
+                margin-left: 30%;
+            }
+
+            #second_d label {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                position: absolute;
+                margin-top: 30px;
+                margin-left: 30px;
+            }
+
+        h4 {
+            text-align: center;
+            margin-left: 40%;
+            font-size: 2em;
+            font-weight: 100;
+            font-family: 'GOTHAM-BOLD',Arial, Helvetica, sans-serif;
+            color: rgba(244,0,9,1);
+        }
+         #second_d form{
+             position:relative;
+         }
+
+        .inner_div_two {
+            /*display:inline-block;*/
+            width: 600px;
+        }
+
+        select {
             position: relative;
-    margin-left: 30%;
-    margin-top: 30px;
-    padding: 5px 5px;
-    display: inline-block;
-    float: left;
+            width: 100px;
+            left: 44%;
+            margin-left: 30px;
+            /* margin-left: 0; */
+            margin-top: 30px;
+            padding: 5px 5px;
+            display: inline-block;
+            float: left;
+        }
 
+        #Sub {
+            position: relative;
+        }
+
+        #Sub_mit {
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: -256px;
+            left: 300px;
+        }
+        #second_d label.error{
+
+    font-size: 0.8em;
+    color: #F00;
+    font-weight: bold;
+    display: block;
+    margin-top: -7%;
+    margin-left: 77%;
+}
+
+
+    
+   #inner_div input.error,  #inner_div select.error {
+            border: 1px red solid ;
+            background:#ffa9bb;
         }
     </style>
     <script>
 
         $(document).ready(function () {
-           
-$(window).scroll(function () {
 
-    var scr_top = $(this).scrollTop();
-    if (scr_top > $('.History').offset().top - ($(window).height() / 1.2)) {
+            $(window).scroll(function () {
 
-    setTimeout(function () {
+                var scr_top = $(this).scrollTop();
+                if (scr_top > $('.History').offset().top - ($(window).height() / 1.2)) {
+
+                    setTimeout(function () {
                         $('.History figure').addClass('scrolling')
-                    },300)
-                       
-
-
-                 
-
-                    
-                    }
-
-
-})
+                    }, 300)
 
 
 
 
 
+
+                }
 
 
             })
 
+            $('#Sign_In').validate({
+                rules: {
+                    name: {
+                        required: true,
+                        name: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+          
+                messages: {
+                    name: {
+                        required: "Please write your name.",
+                        name: "This is not a correct name"
+                    },
+                    email: {
+                        required: "Please supply an e-mail address.",
+                        email: "This is not a valid email address."
+                    }
+                }
+                })
+                
 
-        
+                
+
+
+        })
 
     </script>
 </head>
 <body>
 
- <header class="head_first">
-     <div class="head_two"></div>
-</header>
+    <header class="head_first">
+        <div class="head_two"></div>
+    </header>
     <main>
+        <div class="Main_box">
+            <article>
+                <img src="coca-cola/ONE.jpg" />
+                <h3>instagram</h3>
+                <p></p>
+            </article>
+        </div>
+        <article>
+            <img src="coca-cola/TWO.jpg" />
+            <h3>g+</h3>
+            <p>Where else can you taste beverages from around the world? Try them all and discover a world of ahhs at #WorldofCocaCola today!</p>
+        </article>
         <div class="History">
             <figure>
                 <h1>History</h1>
-                <figcaption >Coca-Cola history began in 1886 when the curiosity of an Atlanta pharmacist, Dr. John S. Pemberton, led him to create a distinctive tasting soft drink that could be sold at soda fountains.<br> He created a flavored syrup, took it to his neighborhood pharmacy, where it was mixed with carbonated water and deemed “excellent” by those who sampled it.<br /> Dr. Pemberton’s partner and bookkeeper, Frank M. Robinson, is credited with naming the beverage “Coca‑Cola” as well as designing the trademarked, distinct script, still used today.</figcaption>
-                <img src="coca-cola/Coca-Cola.png"/>
+                <figcaption>Coca-Cola history began in 1886 when the curiosity of an Atlanta pharmacist, Dr. John S. Pemberton, led him to create a distinctive tasting soft drink that could be sold at soda fountains.<br> He created a flavored syrup, took it to his neighborhood pharmacy, where it was mixed with carbonated water and deemed “excellent” by those who sampled it.<br /> Dr. Pemberton’s partner and bookkeeper, Frank M. Robinson, is credited with naming the beverage “Coca‑Cola” as well as designing the trademarked, distinct script, still used today.</figcaption>
+                <img src="coca-cola/Coca-Cola.png" />
             </figure>
+            
         </div>
     </main>
     <footer>
         <div id="first_d">
             <div id="second_d">
-                <form>
+                <form action="process.html" method="post" name="signup" id="Sign_In">
 
 
 
@@ -207,14 +296,14 @@ $(window).scroll(function () {
 
 
 
-                    <div class="inner_div">
-                        <label>Name</label>
-                        <input type="text" />
+                    <div>
+                        <label for="name" class="label">Name</label>
+                        <input type="text" name="name" id="name" title="Please type your name" class="required"/>
                     </div>
 
-                    <div class="inner_div">
+                    <div>
                         <label>Email</label>
-                        <input type="email" />
+                        <input type="email" name="e-mail" id="email" class="required" />
                     </div>
 
                     <div class="inner_div_two">
@@ -239,17 +328,25 @@ $(window).scroll(function () {
                             <option value="2003">2003</option>
 
                         </select>
-                        <select></select>
-                        <select></select>
+                        <select>
+
+                            <option value="">  Month</option>
+                        </select>
+                        <select>
+
+                            <option value=""> Day</option>
+                        </select>
                     </div>
-
-                </form>
-
+                    <div id="Sub">
+                    <input type="submit" id="Sub_mit" value="submit" />
             </div>
+            </form>
+
+        </div>
 
 
 
-        </div>  
+        </div>
         
     </footer>
 </body>

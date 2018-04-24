@@ -84,11 +84,52 @@
     <Content Include="1280px-Summit-lake-wv-night-sky-reflection_-_West_Virginia_-_ForestWander.jpg" />
     <Content Include="1436968.jpg" />
     <Content Include="700x366xStanleyLake-feat-700px-366px.png.pagespeed.ic.Dk87q1l_Zy.jpg" />
+    <Content Include="close.png" />
+    <Content Include="steak.jpeg" />
+    <Content Include="Restrunant.jpg" />
+    <Content Include="bicycle.html" />
+    <Content Include="botton\close.png" />
+    <Content Include="botton\loading.gif" />
+    <Content Include="botton\next.png" />
+    <Content Include="botton\prev.png" />
+    <Content Include="coca-cola\ONE.jpg" />
+    <Content Include="coca-cola\TWO.jpg" />
+    <Content Include="coca-cola\3170086_1c_WOCC_Spring2018_may_ad2.jpg" />
     <Content Include="coca-cola\coca-cola-logo-260x260.png" />
     <Content Include="coca-cola\coca-cola-siente-el-sabor-amigos-1800x700.jpg" />
     <Content Include="coca-cola\Coca-Cola.png" />
     <Content Include="Coca-cola.html" />
     <Content Include="download.jpg" />
+    <Content Include="Form.css" />
+    <Content Include="Form.js" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="HtmlPage2.html" />
+    <Content Include="accordion.html" />
+    <Content Include="HtmlPage3.html" />
+    <Content Include="HtmlPage4.html" />
+    <Content Include="HtmlPage5.html" />
+    <Content Include="HtmlPage6.html" />
+    <Content Include="HtmlPage7.html" />
+    <Content Include="Menu.png" />
+    <Content Include="jquery-ui.min.js" />
+    <Content Include="jquery-ui.structure.css" />
+    <Content Include="jquery-ui.theme.css" />
+    <Content Include="jquery.validate.js" />
+    <Content Include="lightbox.css" />
+    <Content Include="lightbox.js" />
+    <Content Include="NewFolder2\one.jpg" />
+    <Content Include="NewFolder2\two.jpg" />
+    <Content Include="NewFolder2\theri.jpg" />
+    <Content Include="NewFolder2\four.jpg" />
+    <Content Include="NewFolder2\five.jpg" />
+    <Content Include="NewFolder2\six.jpg" />
+    <Content Include="NewFolder3\init.js" />
+    <Content Include="NewFolder3\jquery.productColorizer.css" />
+    <Content Include="NewFolder3\jquery.productColorizer.js" />
+    <Content Include="NewFolder3\jquery.productColorizer.pack.js" />
+    <Content Include="NewFolder3\prettify.css" />
+    <Content Include="NewFolder3\prettify.js" />
+    <Content Include="NewFolder3\raphael-min.js" />
     <Content Include="Stars.html" />
     <Content Include="images.jpg" />
     <Content Include="milkywaystatues_soria_1000.jpg" />
@@ -108,6 +149,7 @@
     <Content Include="open-sans\Apache License.txt" />
     <Content Include="photo_Gallery.html" />
     <Content Include="Web.config" />
+    <Content Include="seven.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -162,6 +204,15 @@
     <Content Include="NewFolder1\Gotham-Book.otf" />
     <Content Include="NewFolder1\GOTHAM-LIGHT.TTF" />
     <Content Include="NewFolder1\Gotham-Thin.otf" />
+    <Content Include="Vhiena_Outline.otf" />
+    <Content Include="NewFolder1\Vhiena_Base.otf" />
+    <Content Include="NewFolder1\Vhiena_Bevel.otf" />
+    <Content Include="NewFolder1\Vhiena_Extrude A.otf" />
+    <Content Include="NewFolder1\Vhiena_Extrude B.otf" />
+    <Content Include="NewFolder1\Vhiena_Gradient.otf" />
+    <Content Include="NewFolder1\Vhiena_Inset.otf" />
+    <Content Include="NewFolder1\Vhiena_Monoline.otf" />
+    <Content Include="NewFolder1\Vhiena_Outline.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

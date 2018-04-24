@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="NewFolder3/jquery.productColorizer.css" rel="stylesheet" />
+    <link href="NewFolder3/prettify.css" rel="stylesheet" />
+    <script src="jquery-3.2.1 (1).js"></script>
+    <script src="NewFolder3/raphael-min.js"></script>
+    <script src="NewFolder3/jquery.productColorizer.js"></script>
+  
+    <style>
+        body{
+
+            margin:0 20px;
+            background:#ccc6c6
+        }
+        #Counter{
+            /*position:relative;*/
+            width:430px;
+            /*margin:auto;*/
+           background:#7c7777;
+        }
+          #Main_image img,#Thumb img{
+            width:100%;
+          
+        }
+          #Thumb{
+              display:grid;
+              grid-template-columns:repeat(4,1fr);
+              grid-gap:5px;
+          }
+
+    </style>
+    <script>
+        $(document).ready(function () {
+
+            $('#Counter').productColorizer()
+        });
+       
+        
+    </script>
+</head>
+<body>
+    <div id="Counter">
+        <div id="Main_image">
+            <img src="NewFolder2/one.jpg" id="Current" />
+            <!--<img id="mask" class="mask" src="images/mask.png" />-->
+        </div>
+        <div id="Thumb">
+            <img src="NewFolder2/one.jpg" />
+            <img src="NewFolder2/two.jpg" />
+            <img src="NewFolder2/theri.jpg" />
+            <img src="NewFolder2/four.jpg" />
+            <img src="NewFolder2/five.jpg" />
+            <img src="NewFolder2/six.jpg" />
+        
+            
+        </div>
+        <!--<div id="Switch">
+           
+
+            <a rel="32,223,95" href="seven.jpg" title="Green" >Green</a>
+            <a rel="255,211,8" href="#mask" title="Yellow">Yellow</a>
+            <a rel="255,101,8" href="#mask" title="Orange">Orange</a>
+            <a rel="16,200,255" href="#mask" title="Blue">Blue</a>
+            <a rel="142,8,255" href="#mask" title="Purple">Purple</a>
+            <a rel="245,25,45" href="#mask" title="Red">Red</a>
+
+
+
+        </div>-->
+    </div>
+</body>
+</html>

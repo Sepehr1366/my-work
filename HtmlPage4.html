@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="Starter">
+        <div id="First">
+            Check The Console
+        </div>
+        <span>To See The Recursive</span>
+        <div id="Two">
+            Traversal
+        </div>
+    </div>
+    <script>
+
+        function Countdown(n) {
+
+            console.log(n)
+            if(n>=1){
+                Countdown(n-1)
+
+            }
+        }
+        Countdown(5)
+        function Travce(call, feedback) {
+            feedback(call);
+           call=call.firstChild;
+            while (feedback) {
+                Travce(call, feedback)
+            call=call.nextSibling;
+            }
+
+
+
+        }
+        Travce(document.getElementById('Start')(call));
+        console.log(call)
+    </script>
+
+</body>
+</html>
