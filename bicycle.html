@@ -84,35 +84,11 @@
                 })
             })
             $('#Thumbnail a:first').click();
-            $('#button').selectmenu({
-
-                change: function (event, ui) {
-
-                    var newImage;
-                    if(ui.item.label==='Red'){
-
-                        newImage = 'bicycle/Big_one.jpg'
-
-                    }
-                        
-                    else if (ui.item.label === 'Green') {
-
-                        newImage = 'bicycle/Big_two.jpg'
-
-                    }
-                    else {
-
-                        newImage = 'bicycle/Big_there.jpg'
-                    }
-
-                    $('#bicycle').attr('src', newImage);
-
-                }
+          
 
 
-
-
-            })
+       
+           
 
             
         })

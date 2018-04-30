@@ -5,11 +5,90 @@
     <script src="jquery-3.2.1 (1).js"></script>
    
     <style>
+       
         body{
             margin:0;
             padding:0;
         }
+        @media screen and (min-width: 375px){
+           #Main_photo {
+            position:relative;
+            height:65%;
+            /*padding: 27% 0;*/
+            background-image: url('Restrunant.jpg');
+            background-position:center center;
+            background-repeat:no-repeat;
+            background-size:cover;
+
+        }
+   #Main_photo h1 {
+    font-family: 'Vhiena_Base';
+    font-size: 50%;
+    text-shadow: 5px 5px 5px #171611;
+    right: 30%;
+   top: -14px;
+    position: absolute;
+    opacity: 1.5;
+    color: #7c795d;
+        }
+        .Btn_one{
+
+          -webkit-transition-duration: 2s;
+           right: -75px;
+           top: 0;
+           position: absolute;
+        }
+        #Menu_head{
+        
+            float:left;
+            width:100px;
+            height:100%;
+            position: absolute;
+            top: 0;
+            left: -100px;
        
+
+
+        }
+         #Menu_head img{
+          background-color: #686868;
+           
+
+
+        }
+    .Menuitem {
+    position: fixed;
+    height: 100%;
+    width: 100px;
+    background: #535353;
+    display: block;
+    opacity: 0.5;
+           
+        }
+    .Menuitem ul {
+  padding:10px 0;
+           
+        }
+    .Menuitem ul li {
+  padding:10px 0;
+  list-style:none         
+        }
+  .Menuitem ul li a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Vhiena_Outline';
+    font-size: 20%;
+    font-weight: bold;
+    
+        }
+
+        }
+        @media screen and (max-width: 667px){
+
+
+        }
 
         @font-face {
             font-family: 'Vhiena_Gradient';
@@ -27,10 +106,30 @@
             font-family: 'Vhiena_Outline';
             src: url('NewFolder1/Vhiena_Outline.otf') format('opentype');
         }
+        @font-face {
+            font-family: 'Vhiena_Monoline';
+            src: url('NewFolder1/Vhiena_Monoline.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'Vhiena_Extrude A';
+            src: url('NewFolder1/Vhiena_Extrude A.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'Vhiena_Gradient';
+            src: url('NewFolder1/Vhiena_Gradient.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'OpenSans-LightItalic';
+            src: url('open-sans/OpenSans-LightItalic.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'OpenSans-Regular';
+            src: url('open-sans/OpenSans-Regular.ttf') format('truetype');
+        }
+     
   #Main_photo {
             position:relative;
             height:65%;
-            /*display:grid;*/
             padding: 27% 0;
             background-image: url('Restrunant.jpg');
             background-position:center center;
@@ -43,7 +142,7 @@
     font-size: 800%;
     text-shadow: 5px 5px 5px #171611;
     right: 30%;
-    top: -128px;
+   top: -14px;
     position: absolute;
     opacity: 1.5;
     color: #7c795d;
@@ -111,14 +210,15 @@
         
 
         .History {
-          position: relative;
+          /*position: relative;*/
            background-color: #4b4747;
           height: 400px;
           top: -27px;
         }
        
-        h1 {
-            font-family: 'OpenSans-Bold';
+         .History h1 {
+            
+           font-family: 'Vhiena_Bevel';
         }
 
         figure {
@@ -138,20 +238,117 @@
         }
 
         figure img {
-            width: 300px;
-            height: 300px;
-            position: absolute;
-            margin-left: 869px;
-           margin-top: -184px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin-left: 869px;
+    margin-top: -225px;
         }
 
         figcaption {
-            display: block;
-            font-family: 'OpenSans-Light';
-            font-weight: bold;
-            color: #9a8484;
+    display: block;
+    font-family: 'OpenSans-LightItalic';
+    font-weight: bold;
+    font-size: 120%;
+    color: #fffafa;
+        }
+     .Wrapper{
+         height: 1100px;
+         /*position: relative;*/
+         background-color: pink;
+         top: -127px;
+       }
+     .Wrapper h1{
+    font-family: 'Vhiena_Outline';
+    text-align: center;
+    top: 10%;
+    color: black;
+    position: relative;
+    font-size: 800%;
+       }
+
+        #Content{
+      max-width: 900px;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+        }
+        .main{
+
+            padding-bottom: 1em;
+    
+            
+        }
+        #Thumbnail{
+    position: absolute;
+    float: left;
+    margin-left: 22%;
+    margin-top: 77%;
+    
+        }
+           #Thumbnail a{
+        text-decoration:none;
+        margin-left: 30px;
+
+
+
         }
 
+        #Thumbnail img {
+          display: inline-block;
+          margin: 0 0 10px 0;
+          width:100px;
+          height:100px;
+        
+
+        }
+        #Photo_box{
+     width: 800px;
+     height: 500px;
+     margin-left: 22%;
+     margin-top: 10%;
+     position: absolute;
+  
+
+        }
+         #Photo_box img{
+       position: absolute;
+       width: 100%;
+       height: 100%;
+        }
+          footer{
+     position: relative;
+    height: 113px;
+    background-color: #535353;
+   
+          }
+     #social_media{
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 30px;
+   position: absolute;
+     }
+    
+    
+     #Link{
+    width: 400px;
+    right: 0;
+   margin-top: 40px;
+  position: absolute;
+
+
+     }
+     #Link a{
+    text-decoration: none;
+    color: #64ff94;
+    font-family: 'OpenSans-Regular';
+     }
+       #Link a:not(:first-child){
+
+  border-left:1px #fff solid;
+
+
+     }
      .animate{
 
        left:0;
@@ -173,19 +370,38 @@
 
                     setTimeout(function () {
                         $('.History figure').addClass('scrolling')
-                    }, 1500)
+                    }, 1200)
                 }
             })
+            $('#Thumbnail a').click(function (sep) {
+                sep.preventDefault();
+                var img_path = $(this).attr('href');
+                var old_img = $('#Photo_box img');
+                var new_img = $('<img src="' + img_path + '">');
+                new_img.hide();
+                $('#Photo_box').prepend(new_img);
+                new_img.fadeIn(1000);
+                old_img.fadeOut(1000, function () {
+
+
+
+                    $(this).remove();
+                })
+            })
+            $('#Thumbnail a:first').click();
+
+
         })
     </script>
 </head>
 <body>
+    <main>
     <div id="Main_photo">
         <h1>Restaurant</h1>
 
     </div>
     <div id="Menu_head">
-       
+
         <div class="Menuitem">
             <ul>
                 <li>
@@ -200,17 +416,62 @@
             </ul>
             <a class="Btn_one"><img src="Menu.png" /></a>
         </div>
-       
+
     </div>
-   
- <div class="History">
+
+    <div class="History">
         <figure>
             <h1>History</h1>
             <figcaption>A steak (from Old Norse steik, “roast”) is a cut of meat (usually beef). Most steaks are cut perpendicular to the muscle fibres, improving the perceived tenderness of the meat. In North America, steaks are typically served grilled, pan-fried, or broiled. The more tender cuts from the loin and rib are cooked quickly, using dry heat, and served whole. Less tender cuts from the chuck or round are cooked with moist heat or are mechanically tenderised.</figcaption>
-           
+
             <img src="steak.jpeg" />
         </figure>
-</div>
+    </div>
+    <div class="Wrapper">
+        <h1>Photo Gallery</h1>
+        <div id="Photo_box">
+        
+        </div>
+        <div id="Content">
+            <div class="main">
+                <div id="Thumbnail">
 
+                    <div id="Thumb">
+                        <a href="food/six.jpeg">
+                            <img src="food/six_one.jpeg" />
+                        </a>
+
+                        <a href="food/five_one.jpeg">
+                            <img src="food/five.jpeg" />
+                        </a>
+
+                        <a href="food/four_one.jpeg">
+
+                            <img src="food/four.jpeg" />
+                        </a>
+                        <a href="food/one.jpeg">
+
+                            <img src="food/one_one.jpeg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <footer>
+            <div id="social_media">
+                <a><img src="social_media/if_Instagram_3138897.png" /></a>
+                <a><img src="social_media/if_Pinterest_3138900.png" /></a>
+                <a><img src="social_media/if_Twitter_3138902.png" /></a>
+                <a><img src="social_media/if_Youtube_3138903.png" /></a>
+            </div>
+            <div id="Link">
+                <a href="#">Address</a>
+                <a href="#">Email</a>
+                <a href="#">Telephone</a>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
