@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .Mainbox{
+
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows:auto;
+
+
+        }
+        .Content{
+             background-color:green;
+             color:#fff;
+             grid-column-start:1;
+             height: 200px;
+             justify-content: center;
+             grid-column-end:-1;
+             text-align: center;
+
+        }
+    [class^="Sub_item"] {
+      color: white;
+      text-align: center;
+      font-size: 3rem;
+      background-color: blue;
+}
+        .Main_grid{
+
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows:repeat(4,200px);
+            grid-template-areas:
+            "header header header header"
+            "main main sidebar sidebar"
+            "main main sidebar sidebar"
+            "footer footer footer footer";
+            grid-auto-flow:dense;
+            grid-gap:10px;
+        }
+        .Sub_item1{
+            grid-area:header;
+
+        }
+        .Sub_item2{
+
+            grid-area:main;
+        }
+        .Sub_item3{
+              grid-area:sidebar;
+
+        }
+        .Sub_item4{
+            grid-column-start:main-start;
+            grid-column-end:sidebar-end;
+            grid-row:3;
+            background-color:#ff0000;
+
+
+        }
+        .Sub_item5{
+             grid-column-start:sidebar-start;
+            grid-row-start:sidebar-start;
+            /*grid-row:span3;*/
+            background-color:#000000;
+
+        }
+         .Sub_item6{
+
+              grid-area:footer;
+        }
+      .Maingrid{
+          display:grid;
+          grid-gap:10px;
+          grid-template-columns:100px 100px [main-start] 1fr [main-end] 100px 100px;
+          grid-template-rows:100px [main-start] 100px 100px [main-end] 100px ;
+}
+       [class^="Subitem"] {
+      color: white;
+      text-align: center;
+      font-size: 3rem;
+      background-color:#59d956;
+}
+       .Main{
+
+          display:grid;
+          grid-template-columns:repeat(6,100px);
+          grid-template-rows:repeat(6,100px);
+          position:relative;
+          background-color:#959595;
+          justify-content:center;
+          grid-gap:15px;
+          z-index: -2;
+
+       }
+     .Sub_two{
+        background-color:red;
+        position:absolute;
+        width:100%;
+        height:100%;
+        grid-column:1/4;
+        grid-row:1/4;
+        z-index:-1;
+
+
+       }
+       .Sub_four{
+
+
+        background-color:yellow;
+        position:absolute;
+        width:100%;
+        height:100%;
+        grid-column:2/4;
+        grid-row:2/4;
+        z-index:-1;
+
+       }
+         [class^="box"]{
+      color: white;
+      text-align: center;
+      font-size: 3rem;
+      background-color:#be65c0;
+}
+        </style>
+</head>
+<body>
+    <div class="Mainbox">
+        <div class="Content">spams is bad</div>
+    </div>
+    <div class="Main_grid">
+        <div class="Sub_item1">1</div>
+        <div class="Sub_item2">2</div>
+        <div class="Sub_item3">3</div>
+        <div class="Sub_item4">4</div>
+        <div class="Sub_item5">5</div>
+        <div class="Sub_item6">6</div>
+    </div>
+    <div class="Maingrid">
+        <div class="Subitem1">1</div>
+        <div class="Subitem2">2</div>
+        <div class="Subitem3">3</div>
+        <div class="Subitem4">4</div>
+        <div class="Subitem5">5</div>
+        <div class="Subitem6">6</div>
+        <div class="Subitem7">7</div>
+        <div class="Subitem8">8</div>
+        <div class="Subitem9">9</div>
+        <div class="Subitem10">10</div>
+        <div class="Subitem11">11</div>
+        <div class="Subitem12">12</div>
+    </div>
+    <div class="Main">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="Sub_two">3</div>
+        <div class="Sub_four">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+        <div class="box8">8</div>
+        <div class="box9">9</div>
+        <div class="box10">10</div>
+        <div class="box11">11</div>
+        <div class="box12">12</div>
+        <div class="box13">13</div>
+        <div class="box14">14</div>
+    </div>
+</body>
+</html>

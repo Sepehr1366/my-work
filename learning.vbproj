@@ -85,6 +85,14 @@
     <Content Include="1436968.jpg" />
     <Content Include="700x366xStanleyLake-feat-700px-366px.png.pagespeed.ic.Dk87q1l_Zy.jpg" />
     <Content Include="close.png" />
+    <Content Include="Coffee photo\Coffee1.jpg" />
+    <Content Include="Coffee photo\Coffee2.jpeg" />
+    <Content Include="Coffee shop.css" />
+    <Content Include="Coffee shop.html" />
+    <Content Include="Coffee shop.js" />
+    <Content Include="Cup1.jpg" />
+    <Content Include="Cup2.jpg" />
+    <Content Include="FoodPack1_14_Videvo.mov" />
     <Content Include="food\four_one.jpeg" />
     <Content Include="food\four.jpeg" />
     <Content Include="food\five_one.jpeg" />
@@ -95,6 +103,15 @@
     <Content Include="food\six_one.jpeg" />
     <Content Include="food\two.jpeg" />
     <Content Include="food\two_one.jpeg" />
+    <Content Include="HtmlPage10.html" />
+    <Content Include="HtmlPage11.html" />
+    <Content Include="HtmlPage12.html" />
+    <Content Include="HtmlPage8.html" />
+    <Content Include="HtmlPage9.html" />
+    <Content Include="JavaScript1.js" />
+    <Content Include="Number_one.jpeg" />
+    <Content Include="Number_two.jpeg" />
+    <Content Include="Number_three.jpeg" />
     <Content Include="social_media\if_Instagram_3138897.png" />
     <Content Include="social_media\if_Pinterest_3138900.png" />
     <Content Include="social_media\if_Twitter_3138902.png" />
@@ -162,6 +179,9 @@
     <Content Include="jquery-3.2.1 %281%29.js" />
     <Content Include="open-sans\Apache License.txt" />
     <Content Include="photo_Gallery.html" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="StyleSheet2.css" />
+    <Content Include="StyleSheet3.css" />
     <Content Include="Web.config" />
     <Content Include="seven.jpg" />
   </ItemGroup>

@@ -1,0 +1,96 @@
+﻿body {
+    margin:0;
+    padding:0;
+}
+#Wrapper{
+
+position: relative;
+display: grid;
+grid-template-columns: repeat(1,1fr);
+grid-template-rows: 400px 400px;
+overflow: hidden;
+
+
+}
+.Bottom_layer{
+
+
+ position:absolute;
+ grid-column:1/-1;
+
+
+  top:0;
+  /*width:100vw;
+  min-height: 55vw;*/
+  justify-contents: center;
+  
+  /*color: white;
+  font-size: 2rem;
+  font-family: helvetica, arial;
+  font-weight: 100;
+  text-align: center;*/
+
+
+}/*.Bottom_layer .Wrapp_content{
+
+
+    position:absolute;
+    width:100vw;
+    min-height:55vw;
+    overflow:hidden;
+
+
+}*/
+/*./*Bottom_layer .Wrapp_body{
+
+
+   position:absolute;
+   width:25%;
+   top:20%;
+   text-align:center;
+   -webkit-transform:translateY(-50%);
+   color:#fff;
+
+}
+.Layer img{
+
+
+   position:absolute;
+   width:100%;
+   top:50%;
+   left:50%;
+   -webkit-transform:translate(-50%,-50%);
+
+
+}*/
+/*.Layer h1{
+
+
+  font-size:2em;
+  z-index:1;
+}
+
+.Bottom_layer .Wrapp_body{
+
+    right:5%;
+
+
+}
+.Bottom_layer h1{
+
+    color:#fdab00;
+
+
+}
+.Layer_two{
+    background-color:#eee;
+    color:#222;
+    z-index:2;
+    width:50vw; 
+}
+.Layer_two .Wrapp_body{
+
+   left:5%;
+     color:#222;*/
+
+
