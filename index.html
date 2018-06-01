@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Css/Main.css" rel="stylesheet" />
+    <link href="Css/jquery.slider.css" rel="stylesheet" />
+    <link href="Css/jquery.easy_slides.css" rel="stylesheet" />
+    <link href="Css/font-awesome.css" rel="stylesheet" />
+    <link href="Css/fontCss.css" rel="stylesheet" />
+    <link href="Css/print.css" rel="stylesheet" />
+    <script src="Java/jquery-3.2.1.min (1).js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="Java/jquery.slider.js"></script>
+    <script src="Java/megamenu.js"></script>
+    <script src="Java/multislider.js"></script>
+   
+    <script>
+    $(document).ready(function () {
+
+
+        $('.testSlider').slider({
+            source: [
+            {
+                src: "photos/1.jpg",
+
+                hasHref: true,
+                href: '#',
+                hrefTarget: '_self'
+            },
+
+            {
+                src: 'photos/2.jpg',
+
+                hasHref: false,
+                hrefTarget: '_self',
+            },
+            {
+
+                src: 'photos/3.jpg',
+
+
+                hasHref: false,
+                hrefTarget: '_self',
+            },
+
+
+            ],
+            height: 600,
+            activeIndex: 0,
+            speed: 800,
+            durantion: 3000,
+            showSlider: true,
+            showOrigin: true,
+            originType: 'circle',
+            originPosition: 'right',
+            backgroundSize: 'cover',
+            backgourndPosition: 'center center',
+            selectLeftClassName: 'dw-icon-left',
+            selectRightClassName: 'dw-icon-right',
+        });
+        $('.exampleSlider').multislider({
+
+
+            continuous: false,
+
+            slideAll: false,
+
+
+            interval: 2000,
+
+
+            duration: 500,
+
+
+            hoverPause: true,
+
+
+            pauseAbove: null,
+
+
+            pauseBelow: null
+
+        })
+
+    })
+
+    </script>
+</head>
+<body>
+    <div class="menu-container">
+    <div class="menu">
+        <ul>
+            <li class="Menu_sign">
+                <a href="#">Menu_one</a>
+                <ul>
+                    <li><a href="shoes.html">shoes</a></li>
+
+                    <li><a href="zoom.html">zoom</a></li>
+
+                    <li><a href="scrooll.html">scrooll</a></li>
+
+                    <li><a href="Form.html">Form</a></li>
+
+                </ul>
+
+            </li>
+            <li class="Menu_sign">
+                <a href="#">Menu_two</a>
+                <ul>
+
+
+                    <li><a href="Bootstrap.html">Bootstrap</a></li>
+
+
+                </ul>
+            </li>
+
+            <li class="Menu_sign">
+                <a href="#">Projet_two</a>
+                <ul>
+
+
+                    <li><a href="resturant.html">Page_one</a></li>
+                    <li><a href="Coffee_shop.html">Page_two</a></li>
+
+
+                </ul>
+            </li>
+            <li class="Menu_sign"><a href="#">Menu_four</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="testSlider" id="big_photo">
+
+    </div>
+
+
+    <div id="Box">
+        <div id="little_Box"><a><img src="photos/5.jpg" /></a></div>
+   
+        <div id="little_little"><a><img src="photos/4.jpg" /></a></div>
+
+        
+    </div>
+    <div id=example class="exampleSlider">
+
+        <div class="MS-content">
+            <div class="item">
+
+
+                <a href="#">
+                    <img src="photos/10.jpg" /></a>
+            </div>
+            <div class="item">
+
+
+
+                <a href="#"><img src="photos/7.jpg" /></a>
+             
+            </div>
+            <div class="item">
+
+
+
+                <a href="#"><img src="photos/6.jpg" /></a>
+               
+            </div>
+            <div class="item">
+
+
+                <a href="#"><img src="photos/8.jpg" /></a>
+               
+            </div>
+            <div class="item">
+
+
+                <a href="#"><img src="photos/9.jpg" /></a>
+               
+            </div>
+        </div>
+    </div>
+    <div id="search_Box">
+        <label>
+            SIGN UP FOR NEWS & GET
+
+            <span>15% OFF</span>
+
+        </label>
+        <input type="search" />
+    </div>
+    <footer>
+        <div id="container_foot">
+
+
+            <div id="sub_count">
+                <div id="box_one">
+                    <h5 id="h_5"><a href="#">GIFT CARDS</a></h5>
+
+
+
+
+                </div>
+                <div class="left_box">
+
+                    <h5>CUSTOMER SUPPORT</h5>
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+
+
+
+                    </ul>
+                </div>
+                <div class="left_box">
+
+                    <h5>CUSTOMER SUPPORT</h5>
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </footer>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Css/Form.css" rel="stylesheet" />
+   <script src="Java/jquery-3.2.1.min (1).js"></script>
+    <script src="Java/java1.js"></script>
+    <script src="Java/jquery.validate.js"></script>
+</head>
+<body>
+    <div id="form_Page">
+        <div id="form_column">
+            <form action="process.html" method="post" name="signup" id="Sign_In">
+                <div>
+                    <label for="name" class="label">Name </label>
+                    <input name="name" type="text" class="required" id="name" title="Please type your name.">
+                </div>
+                <div>
+                    <label for="email" class="label">E-mail Address</label>
+                    <input name="email" type="text" id="email">
+                </div>
+                <div>
+                    <label for="password" class="label">Password</label>
+                    <input name="password" type="password" id="password">
+                </div>
+                <div>
+                    <label for="confirm_password" class="label">Confirm Password</label>
+                    <input name="confirm_password" type="password" id="confirm_password">
+                </div>
+                <div id="sub_form">
+                    <span class="label">Hobbies</span>
+                    <input name="hobby" type="checkbox" id="heliskiing" value="heliskiing" class="required" title="Please check at least 1 hobby.">
+                    <label for="heliskiing">Heli-skiing</label>
+                    <input name="hobby" type="checkbox" id="pickle" value="pickle">
+                    <label for="pickle">Pickle eating</label>
+                    <input name="hobby" type="checkbox" id="walnut" value="walnut">
+                    <label for="walnut">Making walnut butter</label>
+                </div>
+                <div id="sepehr">
+                    <label for="sepehr" class="label">Date of birth</label>
+                    <input name="sepehr" type="text" id="sepehr_one" class="date" title="Please type your date of birth using this format: 01/19/2000">
+                </div>
+                <div id="Birth">
+                    <label for="planet" class="label">Planet of Birth</label>
+                    <select name="planet" id="planet" class="required" title="Please choose a planet.">
+                        <option value="">--Please select one--</option>
+                        <option value="earth">Earth</option>
+                        <option value="mars">Mars</option>
+                        <option value="alpha centauri">Alpha Centauri</option>
+                        <option value="forget about it">You've never heard of it</option>
+                    </select>
+                </div>
+                <div id="email">
+                    <p>
+                        Would you like to receive annoying e-mail froM
+                        US?
+                    </p>
+
+                    <input type="radio" name="spam" id="yes" value="yes" class="required" title="Please select an option">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="spam" id="definitely" value="definitely">
+                    <label for="definitely">Definitely</label>
+                    <input type="radio" name="spam" id="choice" value="choice">
+                    <label for="choice">Do I have a choice?</label>
+                </div>
+
+                <div id="sub">
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

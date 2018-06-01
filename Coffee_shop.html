@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Css/Coffee_shop.css" rel="stylesheet" />
+    <script src="Java/Coffee_shop.js"></script>
+
+</head>
+<body>
+    <div class=Main>
+    
+<header>
+             <nav class="Navbar">
+
+
+                <span class=openSlide>
+                    <a href=# onclick="openup()">
+                <img src="photos/Menu.png"
+                    </a>
+                </span>
+                <ul class="Navbar-Nav">
+                    <li><a href=#>Home</a></li>
+                    <li><a href=#>Menu</a></li>  
+                    <li><a href=#>Contact</a></li>  
+                    <li><a href=#>Address</a></li>
+
+                </ul>
+
+             </nav>
+
+           <div id="Side_Menu" class="Side_nav">
+               <a href=# class="Btn_close" onclick="closeup()">&times;</a>
+               <a href=#>Home</a>
+               <a href=#>Menu</a> 
+               <a href=#>Contact</a> 
+               <a href=#>Address</a>
+           </div>
+<div id="Title">
+    <h1>COFFEE BOSS</h1>
+</div>
+     
+    </header>
+
+
+    <section id="Wrapper" class="Skew_it minimal">
+
+        <div class="Bottom_layer Layer">
+            <div class="Wrapp_content">
+                <div class="Wrapp_body">
+                    <h1 id="H_one">Caffè latte</h1>
+                    <p id="P_one">Café latte, Italian for coffee with milk, is a mixture of espresso and a liberal amount of steamed or scalded milk and a foamy milk.</p>
+                </div>
+             
+                <img src="photos/Coffee1.jpg" id="Photo_one"/>
+            </div>
+        </div>
+
+        <div class="Bottom_layer Layer_two">
+            <div class="Wrapp_content">
+                <div class="Wrapp_body">
+                    <h1>Espresso Coffee </h1>
+                    <p>Espresso was born out of the need for speed. In the late 1800s, coffee was wildly popular among Europeans</p>
+                </div>
+             
+                <img src="photos/Coffee2.jpeg" />
+            </div>
+        </div>
+        <div class="Handel"></div>
+    </section>
+
+
+    <div class="Big_wrapper">
+
+        <div id="arrow_left" class="arrow"></div>
+        <div id="Slider">
+        <div class="Slide slide1">
+            <div class="Slide_content">
+                <span>Coffee</span>
+            </div>
+        </div>
+            <div class="Slide slide2">
+                <div class="Slide_content">
+                    <span>Feel</span>
+                </div>
+            </div>
+            <div class="Slide slide3">
+                <div class="Slide_content">
+                    <span>Good</span>
+                </div>
+            </div>
+
+    </div>
+       <div id="arrow_right" class="arrow"></div>
+    </div>
+
+
+    <div id=map></div>
+ </main>
+
+ <script>
+    function openup(){
+
+document.getElementById('Side_Menu').style.width='250px';
+document.getElementById('Title').style.marginLeft='250px';
+    }
+        function closeup(){
+
+    document.getElementById('Side_Menu').style.width='0';
+    document.getElementById('Title').style.marginLeft='0';
+        }
+ 
+
+     let slide_image = document.querySelectorAll('.Slide'),
+         arrowLeft = document.querySelector('#arrow_left'),
+         arrowRight = document.querySelector('#arrow_right'),
+         current = 0;
+     function sep() {
+
+         for (i = 0; i < slide_image.length; i++) {
+             slide_image[i].style.display = 'none';
+
+         }
+     }
+     function start_slide() {
+
+         sep();
+         slide_image[0].style.display = 'block';
+
+     }
+     function slide_left() {
+
+         sep();
+         slide_image[current-1].style.display = 'block';
+         current--;
+     }
+     function slide_right() {
+
+         sep();
+         slide_image[current +1].style.display = 'block';
+         current ++;
+     }
+     arrowLeft.addEventListener('click', function () {
+
+         if (current === 0) {
+
+
+
+             current = slide_image.length;
+         }
+         slide_left()
+     });
+         arrowRight .addEventListener('click', function () {
+
+             if (current === slide_image.length -1) {
+
+
+
+                 current = -1;
+             }
+             slide_right();
+     })
+         start_sli
+function initMap (){
+
+var options={
+
+zoom:8,
+center:new google.maps.LatLng(34.0522, -118.2437),
+
+}
+var map= new
+google.maps.Map(document.getElementById('map'),options);
+google.maps.event.addListener(map,'click',
+function(event){
+
+  addmarker({sep:event.latLng});
+});
+var markers=[
+{sep:(new google.maps.LatLng(34.1002, -118.4595)),iconImage:'https://maps.google.com/mapfiles/kml/shapes/'+'info-i_maps.png',
+content:'<h1>Mc donalds Info<h1/>'
+
+},{sep:(new google.maps.LatLng(33.6846, -117.8265))},
+
+{sep:(new google.maps.LatLng(33.8366, -117.9143))}
+
+];
+for(i=0 ;i< markers.length; i++){
+
+  addmarker(markers[i]);
+
+
+}
+function addmarker(prop){
+var marker= new google.maps.Marker({
+
+position:prop.sep,
+map:map,
+});
+
+if(prop.iconImage){
+marker.setIcon(prop.iconImage)
+
+}
+if(prop.content){
+var infobox=new google.maps.InfoWindow({
+content:prop.content
+})
+marker.addListener('click',function(){
+infobox.open(map,marker);
+})
+}
+}
+}
+
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfxoHFrtopaNtvrcLE7fFpqEBM-ccQm2A &callback=initMap"
+    async defer></script>
+
+ </script>
+</body>
+</html>
